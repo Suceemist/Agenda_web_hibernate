@@ -23,13 +23,6 @@
         <div class="container">
             <table class="table">
             <tr><th>Nombre</th><th>Email</th><th>Telefono</th><th>Borrar contacto</th></tr>
-            <s:iterator value="lista_contactos" var="contacto">
-					<tr>
-						<td><s:property value="contacto.nombre" />
-						<td><s:property value="contacto.email" /></td>
-						<td><s:property value="contacto.telefono"/></td>
-					</tr>	
-				</s:iterator>
             <%
                 for(int i=0;i<lista_contactos.size();i++){
                 Contacto c=lista_contactos.get(i);
